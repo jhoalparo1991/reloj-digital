@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.reloj{
+    background : #0489A9;
+    padding:30px;
+    border-radius:20px;
+    color: #fff;
+    width:30%;
+    box-shadow: 5px 4px #025c72;
+    opacity: 0.7;
+    transform: rotate(10deg);
+}
+.reloj .hora, .reloj .fecha{
+    margin: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.reloj .hora{
+    font-size: 2.5rem;
+}
+
+.reloj .fecha{
+
+}
+
+.date{
+    display: block;
+    text-align: center;
+    border-bottom:1px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+@media(max-width:500px){
+    .reloj{
+        width: 80%;
+    }
+}
+
+@media(max-width:700px){
+    .reloj{
+        width: 80%;
+    }
+}
